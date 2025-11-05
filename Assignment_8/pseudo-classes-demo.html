@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pseudo-Classes Demonstration</title>
+  <link rel="stylesheet" href="pseudo-classes-demo.css" />
+</head>
+<body>
+  <!-- Header with page title -->
+  <header class="site-header">
+    <h1>Pseudo-Classes Demo</h1>
+    <p>Examples of <code>:hover</code>, <code>:focus</code>, <code>:active</code>, and <code>:nth-child()</code>.</p>
+  </header>
+
+  <main>
+    <!-- Flex row containing all examples side-by-side -->
+    <section class="examples" aria-label="Pseudo-class examples">
+      <article class="example">
+        <h2>Links</h2>
+        <p class="note">Hover and click the links to see <em>:hover</em> and <em>:active</em>.</p>
+        <nav class="links">
+          <a href="#a1">Link One</a>
+          <a href="#a2">Link Two</a>
+          <a href="#a3">Link Three</a>
+          <a href="#a4">Link Four</a>
+        </nav>
+        <p class="note small">Every 2nd item styled via <code>:nth-child(2n)</code>.</p>
+      </article>
+
+      <article class="example">
+        <h2>Buttons</h2>
+        <p class="note">Press and hold to see <em>:active</em>. Tab to see <em>:focus</em>.</p>
+        <div class="btns">
+          <button type="button" class="btn">Default</button>
+          <button type="button" class="btn">Action</button>
+          <button type="button" class="btn">More</button>
+          <button type="button" class="btn">Info</button>
+        </div>
+      </article>
+
+      <article class="example">
+        <h2>Form Inputs</h2>
+        <p class="note">Click or tab into an input to see <em>:focus</em>.</p>
+        <form class="form">
+          <label> Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label> Email
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <button class="btn">Submit</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Pseudo-Classes Demo</small>
+  </footer>
+</body>
+</html>

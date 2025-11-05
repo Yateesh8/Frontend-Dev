@@ -1,0 +1,35 @@
+/* Element selector: style all paragraphs */
+p { line-height:1.7; color:#dbe2ff; font-family: Inter, system-ui, sans-serif; }
+
+/* Base layout and colors */
+:root { --bg:#0e1117; --card:#171a21; --text:#eef2ff; --muted:#a9b1c6; --accent:#6aa9ff; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); }
+.site-header, .site-footer { text-align:center; padding:1rem; background:#11141b; }
+.wrap { max-width:900px; margin:0 auto; padding:1rem; background:var(--card); border:1px solid #283152; border-radius:16px; box-shadow: 0 8px 20px rgba(0,0,0,.35); }
+
+/* ID selector: #intro */
+#intro { background:#10172a; padding:.75rem 1rem; border-radius:12px; border:1px solid #283152; }
+
+/* Class selector: .highlight */
+.highlight { color:#ffe48d; font-weight:700; }
+
+/* Attribute selectors */
+a[href^="https"] { color: var(--accent); }
+input[type="text"] { border:1px solid #2a3152; padding:.6rem .7rem; border-radius:10px; background:#0f1420; color:var(--text); }
+input[type="email"] { border:1px dashed #2a3152; padding:.6rem .7rem; border-radius:10px; background:#0f1420; color:var(--text); }
+
+/* Combinators */
+/* Descendant: any a inside .list */
+.list a { text-decoration:none; }
+/* Child (>): only direct li children of .list */
+.list > li { padding:.35rem .5rem; }
+/* Adjacent sibling (+): style p immediately after .lead */
+.lead + p { color:#c8d6ff; }
+/* General sibling (~): any p after .lead */
+.lead ~ p { opacity:.9; }
+
+/* Button styling for neat alignment */
+button { padding:.6rem .8rem; border-radius:10px; border:1px solid #2a3152; background:#121a2a; color:var(--text); }
+.demo-form { display:grid; gap:.6rem; margin-top:.75rem; }
+.list { padding-left:1.25rem; }

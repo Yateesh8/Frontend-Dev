@@ -1,0 +1,32 @@
+/* Page base */
+:root { --bg:#0f1117; --card:#171a21; --text:#eef2ff; --muted:#a9b1c6; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Inter, system-ui, sans-serif; background:var(--bg); color:var(--text); }
+.site-header, .site-footer { text-align:center; padding:1rem; background:#11141b; }
+
+/* Center the examples with Flexbox */
+.center { min-height: calc(100svh - 140px); display:flex; align-items:center; justify-content:center; padding:1rem; }
+.tooltip-row { display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center; }
+
+/* Tooltip trigger containers */
+.tip { position:relative; display:inline-flex; align-items:center; justify-content:center; padding:.75rem 1rem; background:var(--card); border:1px solid #2a3146; border-radius:14px; }
+
+.icon { background:#0f1420; color:var(--text); border:1px solid #273154; width:40px; height:40px; border-radius:10px; cursor:default; }
+.word { font-weight:700; }
+
+/* Tooltip bubble (hidden by default) */
+.bubble {
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform: translateX(-50%);
+  background:#0a0f1d; border:1px solid #2a375f; padding:.5rem .65rem; border-radius:10px;
+  color:var(--text); white-space:nowrap; pointer-events:none;
+  opacity:0; transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+/* Little arrow */
+.bubble::after {
+  content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%);
+  border:7px solid transparent; border-top-color:#2a375f;
+}
+
+/* Show bubble on hover of container */
+.tip:hover .bubble { opacity:1; transform: translateX(-50%) translateY(-4px); }

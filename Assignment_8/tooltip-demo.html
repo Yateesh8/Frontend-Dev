@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Tooltip Demonstration</title>
+  <link rel="stylesheet" href="tooltip-demo.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Pure CSS Tooltips</h1>
+    <p>Hover the icons/words to see tooltips. Built with <code>position:absolute</code> and opacity transitions.</p>
+  </header>
+
+  <main class="center">
+    <section class="tooltip-row" aria-label="Tooltip examples">
+      <div class="tip">
+        <button class="icon" aria-describedby="t1">ⓘ</button>
+        <span class="bubble" role="tooltip" id="t1">General information tooltip</span>
+      </div>
+
+      <div class="tip">
+        <span class="word" aria-describedby="t2">Accessibility</span>
+        <span class="bubble" role="tooltip" id="t2">Keep tooltips readable and above elements</span>
+      </div>
+
+      <div class="tip">
+        <span class="word" aria-describedby="t3">Hover me</span>
+        <span class="bubble" role="tooltip" id="t3">Smooth fade with 0.3s ease-in-out</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Tooltips</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Base colors and typography */
+:root {
+  --bg:#0f1117;
+  --card:#171a21;
+  --text:#eef2ff;
+  --muted:#a9b1c6;
+  --accent:#6aa9ff;
+  --accent-2:#9d7bff;
+}
+* { box-sizing: border-box; }
+body {
+  margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height:1.6;
+}
+.site-header, .site-footer { text-align:center; padding:1rem; background:#11141b; }
+main { padding: 1.25rem; }
+
+/* Layout: one row using Flexbox; wraps on small screens */
+.examples {
+  display:flex; gap:1rem; align-items:stretch; justify-content:center; flex-wrap:wrap;
+  max-width:1200px; margin:0 auto;
+}
+.example {
+  background: var(--card); border:1px solid #2a3146; border-radius:16px; padding:1rem; width:min(360px, 92vw);
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+}
+.note { color: var(--muted); margin:.25rem 0 .75rem; }
+.note.small { font-size:.9rem; }
+
+/* Links demo */
+.links { display:grid; gap:.5rem; }
+.links a {
+  display:inline-block; padding:.5rem .75rem; border-radius:10px; text-decoration:none; color:var(--text);
+  background:#0f1420; border:1px solid #2b3348; transition: background-color .25s ease, transform .15s ease;
+}
+/* :hover state for links */
+.links a:hover { background:#15213a; }
+/* :active state for links (mouse down) */
+.links a:active { transform: translateY(1px); background:#0d152e; }
+/* :nth-child() example: every second link highlighted */
+.links a:nth-child(2n) { border-color: var(--accent); }
+
+/* Buttons demo */
+.btns { display:flex; flex-wrap:wrap; gap:.5rem; }
+.btn {
+  padding:.6rem .9rem; background:#192133; border:1px solid #2b3758; color:var(--text);
+  border-radius:12px; cursor:pointer; transition: background-color .25s ease, transform .1s ease, box-shadow .25s ease;
+  box-shadow: 0 1px 0 rgba(255,255,255,.03) inset;
+}
+.btn:hover { background:#1f2a44; }
+.btn:active { transform: translateY(1px); }
+.btn:focus { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+/* Form demo */
+.form { display:grid; gap:.6rem; }
+label { display:grid; gap:.25rem; font-weight:600; }
+input {
+  padding:.6rem .7rem; border-radius:10px; background:#101625; color:var(--text);
+  border:1px solid #223052; transition: box-shadow .25s ease, border-color .25s ease;
+}
+/* :focus state for inputs */
+input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(106,169,255,.25); }

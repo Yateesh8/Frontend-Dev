@@ -1,0 +1,23 @@
+/* Base and layout */
+:root { --bg:#0f1117; --text:#eef2ff; --muted:#a9b1c6; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Inter, system-ui, sans-serif; background:var(--bg); color:var(--text); }
+.site-header, .site-footer { text-align:center; padding:1rem; background:#11141b; }
+
+/* Responsive grid gallery: 3 columns above 700px, stack below */
+.gallery {
+  display:grid; gap:1rem; padding:1rem; max-width:1200px; margin:0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+@media (max-width:700px) {
+  .gallery { grid-template-columns: 1fr; }
+}
+.card { background:#12182b; border:1px solid #273154; border-radius:16px; overflow:hidden; box-shadow: 0 8px 22px rgba(0,0,0,.35); }
+.img-wrap { position:relative; overflow:hidden; aspect-ratio: 3 / 2; }
+.img-wrap::after {
+  content:""; position:absolute; inset:0; background: rgba(0,0,0,0); transition: background .25s ease;
+}
+img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .25s ease; border-bottom:1px solid #273154; }
+.card:hover img { transform: scale(1.1); }
+.card:hover .img-wrap::after { background: rgba(0,0,0,.25); }
+figcaption { padding:.75rem 1rem; color: var(--muted); }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="selectors-practice.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Selectors Practice</h1>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Element, Class, ID, Attribute, and Combinators</h2>
+      <p id="intro">This paragraph is targeted by an <strong>ID selector</strong>.</p>
+
+      <ul class="list">
+        <li>First item</li>
+        <li class="highlight">Second item with a class</li>
+        <li><a href="https://example.com" class="external">External Link</a></li>
+        <li><a href="#hash">Internal Link</a></li>
+      </ul>
+
+      <form class="demo-form">
+        <input type="text" placeholder="Attribute selector demo" />
+        <input type="email" placeholder="Email" />
+        <button type="button">Submit</button>
+      </form>
+
+      <div class="combo">
+        <p class="lead">Lead paragraph</p>
+        <p>Paragraph next to lead (adjacent sibling)</p>
+        <p>Another paragraph (general sibling)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Selectors</small>
+  </footer>
+</body>
+</html>
