@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q1 — Flexbox Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Your Name</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section id="about" class="about">
+      <h1>About Me</h1>
+      <p>
+        Hello! I'm a front‑end developer who loves clean layouts, semantic HTML5,
+        and modern CSS. This portfolio layout uses Flexbox, is responsive, and
+        centers content nicely.
+      </p>
+    </section>
+
+    <section class="portrait" aria-label="Profile image section">
+      <figure>
+        <!-- Simple inline SVG placeholder as the image -->
+        <svg viewBox="0 0 300 300" role="img" aria-label="Profile placeholder">
+          <rect width="300" height="300" fill="#e5e7eb"/>
+          <circle cx="150" cy="115" r="55" fill="#9ca3af"/>
+          <rect x="75" y="190" width="150" height="70" rx="12" fill="#9ca3af"/>
+        </svg>
+        <figcaption>Profile Placeholder</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; <span id="year">2025</span> Your Name</footer>
+</body>
+</html>

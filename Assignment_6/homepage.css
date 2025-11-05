@@ -1,0 +1,48 @@
+/* Q3 — Flexbox Homepage */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: flex; flex-direction: column; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#111827; }
+
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.nav {
+  display: flex;
+  justify-content: space-around; /* spaced evenly */
+  gap: 1rem;
+}
+.nav a { text-decoration: none; color: #374151; font-weight: 600; }
+
+.main {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  flex: 1 1 0;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+.box:hover { transform: rotate(2deg); }
+
+.footer {
+  margin-top: auto;           /* stays at bottom */
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+/* Balanced stacking on small screens */
+@media (max-width: 720px) {
+  .main { flex-direction: column; }
+}

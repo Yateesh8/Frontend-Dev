@@ -1,0 +1,61 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#111827; }
+.pricing {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  animation: fadein .8s ease both;   /* container fades */
+}
+.card {
+  flex: 1 1 280px;
+  max-width: 360px;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  text-align: center;
+  background: #fff;
+  transform: translateY(0);
+  transition: transform .2s ease, box-shadow .2s ease;
+  animation: itemFade .8s ease both;
+}
+.card:nth-child(1){ animation-delay: .05s; }
+.card:nth-child(2){ animation-delay: .15s; }
+.card:nth-child(3){ animation-delay: .25s; }
+
+.card:hover { transform: translateY(-10px); box-shadow: 0 16px 40px rgba(0,0,0,.12); }
+
+.card .price { font-size: 1.5rem; font-weight: 800; margin: .5rem 0 1rem; }
+button {
+  padding: .6rem 1rem;
+  border-radius: .75rem;
+  border: 1px solid #111827;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { opacity: .9; }
+
+/* Highlight middle card */
+.featured {
+  transform: scale(1.04);
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+/* Stack vertically below 750px */
+@media (max-width: 750px) {
+  .pricing { flex-direction: column; }
+  .featured { transform: none; } /* keep consistent on small screens */
+}
+
+/* Fade-in animations */
+@keyframes fadein {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes itemFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

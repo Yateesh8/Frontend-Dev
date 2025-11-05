@@ -1,0 +1,69 @@
+/* Q4 — Dashboard Grid */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#111827; }
+:root { --gap: 1rem; }
+
+/* Grid container */
+body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  min-height: 100svh;
+  gap: var(--gap);
+  padding: var(--gap);
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  font-weight: 700;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #fff;
+  padding: 1rem;
+}
+.sidebar nav { display: flex; flex-direction: column; gap: .5rem; }
+.sidebar a { text-decoration: none; color: #374151; }
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 160px;
+  gap: var(--gap);
+}
+
+.box {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.box:hover { transform: scale(1.02); box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+
+.span-2 { grid-column: span 2; }
+
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar";
+  }
+  .main { grid-template-columns: 1fr; }
+  .span-2 { grid-column: auto; }
+}

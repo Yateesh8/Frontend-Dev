@@ -1,0 +1,53 @@
+/* Q9 — Card flip */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+.stage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;            /* perspective on the container */
+}
+
+.card {
+  width: 320px;
+  height: 200px;
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;   /* keep 3D children */
+  transition: transform .5s ease;
+}
+
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: .75rem;
+  backface-visibility: hidden;
+  background: #fff;
+  padding: 1rem;
+}
+
+.front .img {
+  width: 80%;
+  height: 60%;
+  border-radius: .5rem;
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
