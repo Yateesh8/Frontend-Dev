@@ -1,0 +1,1 @@
+body{margin:0;background:#111;display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif}.row{display:flex;gap:1rem}.card{padding:2rem;background:#fff;border-radius:.5rem;box-shadow:0 2px 5px rgba(0,0,0,.4);transition:.3s}.card:hover{transform:translateY(-6px);box-shadow:0 10px 20px rgba(0,0,0,.6)}

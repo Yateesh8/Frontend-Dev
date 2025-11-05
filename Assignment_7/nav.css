@@ -1,0 +1,1 @@
+body{margin:0;font-family:sans-serif}nav{display:flex;gap:1rem;background:#222;padding:1rem}a{text-decoration:none;color:#fff;padding:.5rem 1rem;transition:.3s;border:1px solid transparent}.active{background:#0af}a:hover{border-color:#0af}@media(max-width:700px){nav{flex-direction:column}}footer{text-align:center;padding:1rem;background:#111;color:#fff;margin-top:1rem}

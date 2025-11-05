@@ -1,0 +1,1 @@
+a[href^="https"]{color:lime}input[type="text"]:focus{outline:2px solid red}li:nth-child(3){background:#333;color:#fff}li+li{margin-top:.5rem}li::before{content:"• ";color:#0af}

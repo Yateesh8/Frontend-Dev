@@ -1,0 +1,1 @@
+body{margin:0;background:#111;display:flex;justify-content:center;align-items:center;height:100vh;color:#fff;font-family:sans-serif}.row{display:flex;gap:1rem}.box{padding:2rem;background:#444;transition:.4s}.r:hover{transform:rotate(15deg)}.s:hover{transform:scale(1.2)}.t:hover{transform:translateY(-10px)}.k:hover{transform:skewX(15deg)}
