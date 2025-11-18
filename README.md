@@ -1,25 +1,24 @@
-# Frontend-Dev
-
-Topic-wise Branches:
+Topic-wise Branches
 
 1. main
-
 2. intro-to-web-dev
-
 3. html
-
 4. html-block-&inline-elements
-
 5. html-iframes
-
 6. css
-
 7. flex
-
 8. css-model
-
 9. css-classes
-
 10. responsive-css
-
 11. bootstrap
+12. JavaScript
+13. JS-Operators
+14. JS-ES-Features
+15. JS-Classes
+16. JS-Functions
+17. Asyc-Programming-with-JS
+18. DOM
+19. OOPS-with-JS
+20. jQuery&Ajax
+21. APIs&Endpoints
+22. React-js
