@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 24px;
+  background: #f5f7fb;
+}
+
+.cheats {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.box {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.box:hover { transform: translateY(-6px); }
+
+/* On small screens stack rows */
+@media (max-width: 700px) {
+  .cheats { grid-template-columns: 1fr; }
+  .box { display: block; }
+}

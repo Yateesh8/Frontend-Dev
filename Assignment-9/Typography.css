@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 48px;
+  background: #fbfbfd;
+}
+
+.typography {
+  text-align: center;
+  max-width: 900px;
+}
+
+/* Required clamp sizes */
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin: 0 0 16px;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Below 700px adjust line-height & spacing */
+@media (max-width: 700px) {
+  body { padding: 20px; }
+  p { line-height: 1.45; margin-top: 12px; }
+}
