@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AcmeStart — Company Landing</title>
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Company-Landing-Page.css">
+</head>
+<body>
+
+  <!-- Full width header with navbar -->
+  <header class="bg-primary text-white">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand fw-bold" href="#">AcmeStart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <main class="py-5">
+    <section class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="display-4 fw-bold">Build faster. Scale smarter.</h1>
+          <p class="lead text-muted">AcmeStart provides tools and infrastructure to take your startup idea from prototype to production.</p>
+          <p>
+            <a href="#" class="btn btn-primary btn-lg me-2">Get Started</a>
+            <a href="#" class="btn btn-outline-secondary btn-lg">Learn More</a>
+          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?w=800" class="img-fluid rounded" alt="Startup">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features grid: using container, row, col -->
+    <section class="container mt-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Cloud-native</h5>
+              <p class="card-text">Deploy in minutes with one-click templates and automatic scaling.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Secure</h5>
+              <p class="card-text">Enterprise-grade security and permissions built-in.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Integrations</h5>
+              <p class="card-text">Plug into your favorite tools and analytics with ease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+      <small class="text-muted">© 2025 AcmeStart — All rights reserved</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* Product-Catalog.css */
+/* Use .col-md-3 for 4 columns on md+, col-sm-6 for 2 columns on small devices, and full-width on xs */
+
+body { font-family: Arial, sans-serif; }
+.product-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+/* .shadow-sm is used for subtle hover; added transition for smoothness */

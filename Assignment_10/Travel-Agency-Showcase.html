@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderly — Travel</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Travel-Agency-Showcase.css">
+</head>
+<body>
+
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h4 class="mb-0">Wanderly</h4>
+      <nav><a href="#" class="text-white text-decoration-none">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <!-- Carousel with 3 slides and custom intervals -->
+    <div id="destCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" class="d-block w-100 rounded" alt="Beach">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sunny Beaches</h5>
+            <p>Relax on world-class shores.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200" class="d-block w-100 rounded" alt="Mountains">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mountain Escapes</h5>
+            <p>Hike and breathe crisp alpine air.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1200" class="d-block w-100 rounded" alt="City">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>City Breaks</h5>
+            <p>Explore vibrant urban culture.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#destCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#destCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Progress bar showing booking completion -->
+    <h5>Booking completion</h5>
+    <div class="progress mb-3" style="height: 24px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4">
+    <div class="container text-center">Contact us: booking@wanderly.example</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

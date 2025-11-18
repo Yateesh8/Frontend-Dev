@@ -1,0 +1,4 @@
+/* Task-Tracker-with-Badges.css */
+body { font-family: Arial, sans-serif; background: #f4f6f9; }
+.list-group-item { font-weight: 500; }
+.badge { min-width: 52px; text-align: center; }

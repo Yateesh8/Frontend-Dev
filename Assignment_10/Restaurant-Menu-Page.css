@@ -1,0 +1,4 @@
+/* Restaurant-Menu-Page.css */
+body { font-family: 'Georgia', serif; background: #fff; }
+.table th, .table td { vertical-align: middle; }
+/* Use .lead and .text-center for improved typography */

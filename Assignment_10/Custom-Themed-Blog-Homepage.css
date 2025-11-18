@@ -1,0 +1,16 @@
+/* Custom-Themed-Blog-Homepage.css */
+/* Override Bootstrap CSS variables and set a Google Font */
+:root {
+  --bs-primary: #0d9488; /* teal */
+  --bs-body-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Apply theme to buttons */
+.bg-custom { background-color: var(--bs-primary) !important; }
+.btn-custom {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border: none;
+}
+.btn-custom:hover { opacity: 0.95; }
+body { font-family: var(--bs-body-font-family); }

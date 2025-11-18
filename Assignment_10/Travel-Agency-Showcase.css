@@ -1,0 +1,7 @@
+/* Travel-Agency-Showcase.css */
+body { font-family: Arial, sans-serif; background: #fbfdff; }
+.carousel img { height: 420px; object-fit: cover; }
+/* Make carousel responsive and visually appealing */
+@media (max-width: 576px) {
+  .carousel img { height: 220px; }
+}

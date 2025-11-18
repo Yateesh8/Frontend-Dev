@@ -1,0 +1,7 @@
+/* Personal-Portfolio-Basics.css */
+/* Use Bootstrap utility classes heavily; custom tweaks below */
+
+body { font-family: 'Helvetica Neue', Arial, sans-serif; }
+header h1 { font-size: 2rem; }
+img.rounded-circle { width: 180px; height: 180px; object-fit: cover; }
+/* Comments: Using .img-fluid for responsive image and .rounded-circle for circle avatar */

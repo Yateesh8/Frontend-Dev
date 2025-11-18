@@ -1,0 +1,6 @@
+/* Pricing-Plans.css */
+body { font-family: Arial, sans-serif; background: #f7fbff; }
+.featured { background-color: var(--bs-primary); color: #fff; border: none; }
+/* Hover effects using shadow-lg and transition */
+.card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.card:hover { transform: translateY(-6px); }
