@@ -1,0 +1,1 @@
+// ProductCardFetcher implementation placeholder
