@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q9 - Multi jQuery Widgets</title>
+    <style>
+        .carousel-item { display: none; }
+        .carousel-item.active { display: block; }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); }
+        .modal-content { background: #fff; margin: 10% auto; padding: 20px; width: 300px; }
+        .widget { padding: 10px; border: 1px solid #ccc; margin: 5px 0; }
+        .active-widget { background-color: #d1f2eb; }
+        .tooltip { display: none; position: absolute; background: #2d3436; color: #fff; padding: 4px 8px; font-size: 0.8rem; border-radius: 3px; }
+    </style>
+    <!-- jQuery version 1 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- jQuery version 2 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="Q9_MultiJQuery.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Dashboard Widgets</h1>
+
+            <div id="carousel">
+                <div class="carousel-item active">Slide 1: Welcome</div>
+                <div class="carousel-item">Slide 2: Stats</div>
+                <div class="carousel-item">Slide 3: Reports</div>
+                <div class="carousel-item">Slide 4: Messages</div>
+                <div class="carousel-item">Slide 5: Settings</div>
+            </div>
+
+            <button id="open-modal">Open Notification</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <p>This is a notification.</p>
+                    <button id="close-modal">Close</button>
+                </div>
+            </div>
+
+            <div id="widgets">
+                <div class="widget" data-tooltip="Main stats">Stats Widget</div>
+                <div class="widget" data-tooltip="Recent updates">Updates Widget</div>
+                <div class="widget" data-tooltip="User messages">Messages Widget</div>
+                <div class="widget" data-tooltip="User profile">Profile Widget</div>
+                <div class="widget" data-tooltip="System settings">Settings Widget</div>
+            </div>
+
+            <div id="tooltip" class="tooltip"></div>
+        </section>
+    </main>
+</body>
+</html>

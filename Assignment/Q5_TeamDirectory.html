@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q5 - Team Members Directory</title>
+    <style>
+        .department { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+        .manager { font-weight: bold; cursor: pointer; }
+        .employee { margin-left: 20px; cursor: pointer; }
+        .highlight { background-color: #dfe6e9; }
+        .contact { display: none; font-size: 0.85rem; color: #636e72; }
+        .collapsed .employee-list { display: none; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Team Directory</h1>
+
+            <div class="department" data-dept="engineering">
+                <h2 class="department-title">Engineering Department</h2>
+                <div class="manager">Alice (Manager)</div>
+                <div class="employee-list">
+                    <div class="employee">E1 - Dev
+                        <span class="contact">dev1@example.com</span>
+                    </div>
+                    <div class="employee">E2 - Dev
+                        <span class="contact">dev2@example.com</span>
+                    </div>
+                    <div class="employee">E3 - QA
+                        <span class="contact">qa@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="department" data-dept="design">
+                <h2 class="department-title">Design Department</h2>
+                <div class="manager">Bob (Manager)</div>
+                <div class="employee-list">
+                    <div class="employee">D1 - UI
+                        <span class="contact">ui@example.com</span>
+                    </div>
+                    <div class="employee">D2 - UX
+                        <span class="contact">ux@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="random-highlight">Highlight random employee siblings</button>
+        </section>
+    </main>
+    <script src="Q5_TeamDirectory.js"></script>
+</body>
+</html>

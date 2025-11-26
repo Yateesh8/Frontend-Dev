@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q3 - Interactive FAQ</title>
+    <style>
+        .faq-item { margin-bottom: 1rem; }
+        .question { cursor: pointer; font-weight: bold; }
+        .answer { display: none; margin-left: 1rem; }
+        .highlight-parent { background-color: #f0f8ff; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>FAQ</h1>
+            <div class="faq-item">
+                <div class="question">What is your return policy?</div>
+                <div class="answer">
+                    <p>We offer a 30-day return policy.</p>
+                    <input type="text" placeholder="Your email for more info" class="answer-input">
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Do you ship internationally?</div>
+                <div class="answer">
+                    <p>Yes, we ship worldwide.</p>
+                    <input type="text" placeholder="Country" class="answer-input">
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">How can I track my order?</div>
+                <div class="answer">
+                    <p>Use the tracking link sent to your email.</p>
+                    <input type="text" placeholder="Order ID" class="answer-input">
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">What payment methods are accepted?</div>
+                <div class="answer">
+                    <p>We accept cards, wallets, and UPI.</p>
+                    <input type="text" placeholder="Preferred method" class="answer-input">
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Can I change my address?</div>
+                <div class="answer">
+                    <p>Address can be changed before dispatch.</p>
+                    <input type="text" placeholder="New address" class="answer-input">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Q3_FAQ.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q8 - Dynamic Blog Posts</title>
+    <style>
+        .post { border-bottom: 1px solid #ccc; padding: 10px 0; }
+        .tag { font-size: 0.8rem; color: #636e72; margin-right: 5px; }
+        .highlight { background-color: #ffeaa7; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Blog Posts</h1>
+            <button id="add-post">Add New Post</button>
+            <button id="prepend-post">Prepend Featured Post</button>
+            <button id="remove-last-post">Remove Last Post</button>
+
+            <input type="text" id="keyword-input" placeholder="Highlight posts containing keyword">
+            <button id="highlight-keyword">Highlight</button>
+
+            <div id="posts">
+                <div class="post">
+                    <span class="tag">#news</span>
+                    <h2>Welcome to our blog</h2>
+                    <p>Latest updates and announcements.</p>
+                </div>
+                <div class="post">
+                    <span class="tag">#tutorial</span>
+                    <h2>Getting started with JavaScript</h2>
+                    <p>Learn the basics of JS.</p>
+                </div>
+                <div class="post">
+                    <span class="tag">#design</span>
+                    <h2>UI/UX best practices</h2>
+                    <p>Create user-friendly interfaces.</p>
+                </div>
+                <div class="post">
+                    <span class="tag">#devops</span>
+                    <h2>Deployment strategies</h2>
+                    <p>CI/CD pipelines for modern apps.</p>
+                </div>
+                <div class="post">
+                    <span class="tag">#tips</span>
+                    <h2>Productivity hacks for developers</h2>
+                    <p>Work smarter, not harder.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Q8_BlogPosts.js"></script>
+</body>
+</html>

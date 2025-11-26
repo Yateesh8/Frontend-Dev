@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q6 - Event Subscription Panel</title>
+    <style>
+        .topic { padding: 5px; border: 1px solid #ccc; margin: 5px 0; cursor: pointer; }
+        .subscribed { background-color: #c8e6c9; }
+        #messages { margin-top: 10px; color: green; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Subscriptions</h1>
+            <button id="subscribe-btn">Subscribe</button>
+            <button id="unsubscribe-btn">Unsubscribe</button>
+
+            <div id="topics-container">
+                <div class="topic">Tech News</div>
+                <div class="topic">Product Updates</div>
+                <div class="topic">Discount Alerts</div>
+                <div class="topic">Weekly Summary</div>
+                <div class="topic">Beta Programs</div>
+            </div>
+
+            <input type="text" id="new-topic-input" placeholder="New topic name">
+            <button id="add-topic-btn">Add Topic</button>
+
+            <div id="messages"></div>
+        </section>
+    </main>
+    <script src="Q6_SubscriptionPanel.js"></script>
+</body>
+</html>
