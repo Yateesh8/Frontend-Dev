@@ -1,1 +1,0 @@
-// BugTrackerPromise implementation placeholder
